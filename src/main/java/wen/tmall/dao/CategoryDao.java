@@ -7,7 +7,9 @@ import java.util.List;
 
 public interface CategoryDao {
 
-    public List<Category> list(Page page);
+    List<Category> list(Page page);
 
-    public int total();
+    int total();
+
+    void add(Category category);
 }

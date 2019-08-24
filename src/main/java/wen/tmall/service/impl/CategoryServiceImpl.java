@@ -24,4 +24,9 @@ public class CategoryServiceImpl implements CategoryService {
     public int total() {
         return categoryDao.total();
     }
+
+    @Override
+    public void add(Category category) {
+        categoryDao.add(category);
+    }
 }
