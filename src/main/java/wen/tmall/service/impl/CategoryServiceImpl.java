@@ -34,4 +34,14 @@ public class CategoryServiceImpl implements CategoryService {
     public void delete(int id) {
         categoryDao.delete(id);
     }
+
+    @Override
+    public Category get(int id) {
+        return categoryDao.get(id);
+    }
+
+    @Override
+    public void update(Category category) {
+        categoryDao.update(category);
+    }
 }
