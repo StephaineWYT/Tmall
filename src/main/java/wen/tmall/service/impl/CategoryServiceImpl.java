@@ -5,7 +5,6 @@ import org.springframework.stereotype.Service;
 import wen.tmall.dao.CategoryDao;
 import wen.tmall.pojo.Category;
 import wen.tmall.service.CategoryService;
-import wen.tmall.util.Page;
 
 import java.util.List;
 
@@ -16,13 +15,8 @@ public class CategoryServiceImpl implements CategoryService {
     CategoryDao categoryDao;
 
     @Override
-    public List<Category> list(Page page) {
-        return categoryDao.list(page);
-    }
-
-    @Override
-    public int total() {
-        return categoryDao.total();
+    public List<Category> list() {
+        return categoryDao.list();
     }
 
     @Override
